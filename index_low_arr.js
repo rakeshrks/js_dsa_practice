@@ -85,18 +85,39 @@
 // console.log(arrayAreEqual(arr1,arr2))
 
 // 6.Find the second largest number in an array
-const arr1 = [2, 3, 4, 3, 4, 5, 6, 4, 4, 7, 8, 9];
-function secondLargestNumber(arr) {
-    let max = arr1[0];
-    for (let i = 0; i < arr1.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i]
-        }
-    }
-    let secondLargest=arr1[0];
-    for(let i=0; i<max ;i++){
-        secondLargest=arr[i]
-    }
-    return secondLargest
+// const arr = [2, 3, 4, 3, 4, 5, 6, 4, 4, 7, 8, 9];
+// function secondLargestNumber(arr) {
+//     let largest = -Infinity;
+//   let secondLargest = -Infinity;
+
+//   for (let num of arr) {
+//     if (num > largest) {
+//       secondLargest = largest;
+//       largest = num;
+//       console.log(largest,"largest")
+//     } else if (num > secondLargest && num < largest) {
+//         console.log(num,"num")
+//       secondLargest = num;
+//     }
+//   }
+
+//   return secondLargest === -Infinity ? null : secondLargest;
+   
+// }
+// console.log(secondLargestNumber(arr));
+// 7.Find MAX and MIN number from an array.
+ let Max=-Infinity;
+  let Min=Infinity;
+function MaxMin(arr){
+for(let num of arr){
+  if(num>Max){
+    Max=num;
+  }
+  if(num<Min){
+    Min=num
+  }
 }
-console.log(secondLargestNumber(arr1));
+}
+MaxMin([2,3,5,6,8,3,4])
+console.log(Max,"max");
+console.log(Min,"min");
