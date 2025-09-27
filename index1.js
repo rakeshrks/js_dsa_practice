@@ -9,13 +9,13 @@
 // let  rray=[12,13,34,56,67,87,45,34]
 // console.log(reverceArr(rray,3))
 
-// const arr = [2, 3, 4, 3, 4, 5, 6, 4, 4, 7, 8, 9];
-// const frequency={};
-// for(let ele of arr){
-//   frequency[ele]=(frequency[ele] || 0)+1
-// }
+const arr = [2, 3, 4, 3, 4, 5, 6, 4, 4, 7, 8, 9];
+const frequency={};
+for(let ele of arr){
+  frequency[ele]=(frequency[ele] || 0)+1
+}
 
-// console.log(frequency);
+console.log(Object.values(frequency).sort());
 
 // function checkPelin(str) {
 //   let newStr = str.split("").reverse().join("");

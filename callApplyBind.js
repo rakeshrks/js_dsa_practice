@@ -12,11 +12,11 @@ function fullName(greet){
    fullName.call(person1,"Hello");
    fullName.call(person2, "Hi");
 
-   // fullName.apply(person1,["HelloR"]);
-   // fullName.apply(person2,["HiR"]);
+   fullName.apply(person1,["HelloR"]);
+   fullName.apply(person2,["HiR"]);
    
-   const person1FullName=fullName.bind(person1);  
-   const person2FullName=fullName.bind(person2);
+  //  const person1FullName=fullName.bind(person1);  
+  //  const person2FullName=fullName.bind(person2);
 
-   person1FullName("Hello");
-   person2FullName("Hi");
+  //  person1FullName("Hello");
+  //  person2FullName("Hi");
