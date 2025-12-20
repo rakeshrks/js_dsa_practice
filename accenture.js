@@ -38,6 +38,5 @@ console.log(fibonacciNum(10))
 //   let a=5*n*n+4;
 //   let b=5*n*n-4;
 //   return (checkPerfectSq(a)||checkPerfectSq(b))
-
 // }
 // console.log(checkFibonacci(34))

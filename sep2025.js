@@ -2,15 +2,18 @@
 function findFreq(arr){
     const freq={}
     for(let num of arr){
-        freq[num]=(freq[num]||0)+1
+        freq[num]=(freq[num]||0)+1 
     }
 
  const sortedArr=Object.entries(freq).sort((a,b)=>b[1]-a[1])
  return sortedArr[1]
 }
+
 const arr=[1,2,1,2,3,2,3,4,3,4,5,9,6,5,8,7,4,0,3,1,5,6,7,4,2,4,6,7]
 console.log(findFreq(arr))
-//2.find the third largest string char in an array of string
+
+
+//2.find the third largest string char in an array of string 
 function arrStringChal(arrStr){
     let first="",second="",third="";
     for(let str of arrStr){
@@ -18,14 +21,15 @@ function arrStringChal(arrStr){
             [third,second,first]=[second,first,str]
         }else if(str.length>second.length){
             [third,second]=[second,str]
-        }else if(str.length.third){
+        }else if(str.length>third.length){
             third=str
-        }
+        } 
     }
     return {first,second,third}
 }
 const arr1=["abc","bcde","xyzwe","iewfiewgf","jhbdsc","dsibiuiuheiuh"]
 console.log(arrStringChal(arr1))
+
 
 //3.Min Max digit from given number
 function minMaxDigit(num,k){
