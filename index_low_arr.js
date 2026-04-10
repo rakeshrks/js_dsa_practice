@@ -106,9 +106,10 @@
 // }
 // console.log(secondLargestNumber(arr));
 // 7.Find MAX and MIN number from an array.
- let Max=-Infinity;
- let Min=Infinity;
+
 function MaxMin(arr){
+   let Max=-Infinity;
+ let Min=Infinity;
 for(let num of arr){
   if(num>Max){
     Max=num;
